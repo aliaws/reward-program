@@ -7,7 +7,7 @@ create table customers
 create table `transactions`
 (
     `id`           int auto_increment primary key,
-    `customer_id`  float        not null,
+    `customer_id`  int        not null,
     `date`         date     null,
     `month`        varchar(255) null,
     `quantity`     float        not null,

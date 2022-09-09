@@ -30,8 +30,8 @@ public class HelperClass {
             LocalDate date = transaction.getDate();
             int customerId = transaction.getCustomer().getId();
             float salesAmount = transaction.getSalesAmount();
-            float rewardPoints = calculateRewardPoints(salesAmount);
-            salesReward.add(new Reward(date, customerId, salesAmount, rewardPoints));
+//            float rewardPoints = calculateRewardPoints(salesAmount);
+            salesReward.add(new Reward(date, customerId, salesAmount));
         }
         return salesReward;
     }

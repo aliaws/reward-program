@@ -62,6 +62,6 @@
 
 - [Documentation](https://api.covid19india.org/documentation)
 
-<img src="/home/syed/Pictures/Screenshots/Screenshot from 2022-09-09 15-30-47.png"/>
-<img src="/home/syed/Pictures/Screenshots/Screenshot from 2022-09-09 15-31-08.png"/>
+<img src="transactions.png"/>
+<img src="customers.png"/>
 ....................................................

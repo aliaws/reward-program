@@ -1,6 +1,8 @@
 package com.program.reward.model;
 
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -9,6 +11,7 @@ import java.util.List;
 public class Customer {
     public String name;
     @OneToMany(mappedBy = "customer")
+    @JsonInclude
     List<Transaction> transactions;
     @Id
     @Column(name = "id", nullable = false)

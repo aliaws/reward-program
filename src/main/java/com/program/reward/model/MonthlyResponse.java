@@ -4,17 +4,27 @@ import static com.program.reward.model.HelperClass.calculateRewardPoints;
 
 public class MonthlyResponse {
     public int customerId;
+    public String customerName;
     public double salesAmount;
     public double rewardPoints;
     public String month;
     int year;
 
-    public MonthlyResponse(int customerId, String month, int year, double salesAmount) {
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public MonthlyResponse(int customerId, String customerName, String month, int year, double salesAmount, double rewardPoints) {
         this.customerId = customerId;
+        this.customerName = customerName;
         this.month = month;
         this.salesAmount = salesAmount;
         this.year = year;
-        this.rewardPoints = calculateRewardPoints(salesAmount);
+        this.rewardPoints = rewardPoints;
     }
 
     public int getCustomerId() {
